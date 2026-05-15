@@ -25,5 +25,8 @@ La aplicación presenta un diseño limpio con los siguientes elementos:
 * Panel de administración para la publicación de nuevas experiencias.
 * Grilla dinámica de tarjetas con categorías y precios formateados.
 
+## Link Pagina
+https://dumbkito.github.io/Sumativa-2-Front-End-Francisco-Tagle/
 ---
 © 2026 Evaluación Sumativa N°2 - Ingeniería Informática, INACAP Maipú [cite: 68, 72].
+
