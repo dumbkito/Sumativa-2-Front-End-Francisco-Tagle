@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe | Experiencias de Lujo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Vibe</div>
+        <div class="nav-actions">
+            <button id="btn-login-modal">Iniciar Sesión</button>
+            <button id="btn-register-modal" class="register-btn">Registrarse</button>
+            <div class="cart-icon" id="btn-cart">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Explora el mundo con Vibe</h1>
+        <p>9 experiencias exclusivas seleccionadas para ti.</p>
+    </header>
+
+    <main class="container">
+        <section class="admin-panel">
+            <h3 id="admin-title">Publicar nueva experiencia</h3>
+            <p id="login-warning">Debes iniciar sesión para gestionar experiencias.</p>
+            <form id="exp-form" class="clean-form" style="display: none;">
+                <input type="text" id="title" placeholder="Título" required>
+                <input type="number" id="price" placeholder="Precio (CLP)" required>
+                <select id="category" required>
+                    <option value="" disabled selected>Categoría</option>
+                    <option value="Cultura">Cultura</option>
+                    <option value="Gastronomía">Gastronomía</option>
+                    <option value="Naturaleza">Naturaleza</option>
+                    <option value="Aventura">Aventura</option>
+                </select>
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+
+        <section id="experience-grid" class="grid"></section>
+    </main>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h3>Bienvenido a Vibe</h3>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                <input type="password" id="login-pass" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+                <div class="login-footer">
+                    <a href="#" id="forgot-pass">¿Olvidó su contraseña?</a>
+                </div>
+                <button type="button" id="close-login" class="secondary-btn">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cart-sidebar" class="sidebar">
+        <h2>Tu Carrito</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">Total: $<span id="total-price">0</span></div>
+        <button id="checkout-btn">Confirmar Reserva</button>
+        <button id="close-cart" class="secondary-btn">Volver</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Vibe Experiencias. Todos los derechos reservados. | <span id="current-user">Invitado</span></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
